@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}my website{% endblock %}</title>
+</head>
+<body>
+
+<header>
+    <h1>BKU CHARSADDA</h1>
+    <nav>
+        <a href="{{ url_for('home') }}">home</a>
+        <a href="{{ url_for('about') }}">about</a>
+        <a href="{{ url_for('admissions') }}">admissions</a>
+        <a href="{{ url_for('contact') }}">contact</a>
+    </nav>
+</header>
+
+{% block content %}
+{% endblock %}
+
+<footer>
+    all rights reserved 2026
+</footer>
+
+</body>
+</html>
